@@ -1,0 +1,73 @@
+{
+	"participants":[
+	{
+		"participantId":"1000",
+		"companyName":"Oil&Gas",
+		"companyAddress":"404 Main Street, Calgary, AB",
+		"fiName":"ATB Financials",
+		"accountNumber":"000454021010",
+		"transitCode":"07639-219",
+		"routingNumber":"021907639",
+		"beneficiaryName":"Oil&Gas",
+		"availableBalance":"23000000.00",
+		"overDraftLimit":"2000000.00"
+	},{
+		"participantId":"1001",
+		"companyName":"Alberta Oil",
+		"companyAddress":"4910 - 50 Street, Athabasca, AB",
+		"fiName":"ATB Financials",
+		"accountNumber":"000122010012",
+		"transitCode":"07269-219",
+		"routingNumber":"021907269",
+		"beneficiaryName":"Alberta Oil",
+		"availableBalance":"22400000.00",
+		"overDraftLimit":"2000000.00"
+	},{
+		"participantId":"1002",
+		"companyName":"Canada Oil&Pipe",
+		"companyAddress":"5141-50 Street, PO Box 4556, Barrhead, AB",		
+		"fiName":"ATB Financials",
+		"accountNumber":"000354312099",
+		"transitCode":"07369-219",
+		"routingNumber":"021907369",
+		"beneficiaryName":"Canada Oil&Pipe",
+		"availableBalance":"33000000.00",
+		"overDraftLimit":"2000000.00"
+	},{
+		"participantId":"1003",
+		"companyName":"NYCGA",
+		"companyAddress":"122 Center Avenue W, Black Diamond, AB",			
+		"fiName":"ATB Financials",
+		"accountNumber":"000534021919",
+		"transitCode":"07239-219",
+		"routingNumber":"021907239",
+		"beneficiaryName":"NYCGA",
+		"availableBalance":"13000000.00",
+		"overDraftLimit":"1000000.00"
+	},{
+		"participantId":"1004",
+		"companyName":"NGOIL Inc",
+		"companyAddress":"Forest Lawn 3620-17 Avenue S.E., Calgary, AB",			
+		"fiName":"ATB Financials",
+		"accountNumber":"000154055361",
+		"transitCode":"07709-219",
+		"routingNumber":"021907709",
+		"beneficiaryName":"NGOIL Inc",
+		"availableBalance":"15000000.00",
+		"overDraftLimit":"500000.00"
+	},{
+		"participantId":"1005",
+		"companyName":"Calg Oil",
+		"companyAddress":"264-6455 Macleod Trail SW, Calgary Chinook Centre, AB",	
+		"fiName":"ATB Financials",
+		"accountNumber":"000124000987",
+		"transitCode":"07309-219",
+		"routingNumber":"021907309",
+		"beneficiaryName":"Calg Oil",
+		"availableBalance":"1000000.00",
+		"overDraftLimit":"1000000.00"
+	}
+	]
+}
+
+

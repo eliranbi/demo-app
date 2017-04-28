@@ -1,0 +1,64 @@
+{
+	"contracts":[
+		{
+			"contractId":"10001001",
+			"sellerCompanyName": "Oil&Gas", 
+			"buyerCompanyName": "Alberta Oil",
+			"effectiveDateStart" : "07/01/2017",
+			"effectiveDateEnd" : "08/01/2017",
+			"pricePerBarrel": "50.00",
+			"volume" : "10000",
+			"status" : "ACTIVE",
+			"totalContractPrice" : "500000.00"
+		},{
+			"contractId":"10001002",
+			"sellerCompanyName": "Oil&Gas", 
+			"buyerCompanyName": "Canada Oil&Pipe",
+			"effectiveDateStart" : "07/01/2017",
+			"effectiveDateEnd" : "08/01/2017",
+			"pricePerBarrel": "50.00",
+			"volume" : "10000",
+			"status" : "ACTIVE",
+			"totalContractPrice" : "500000.00"
+		},{
+			"contractId":"10001003",
+			"sellerCompanyName": "NYCGA", 
+			"buyerCompanyName": "NGOIL Inc",
+			"effectiveDateStart" : "07/01/2017",
+			"effectiveDateEnd" : "08/01/2017",
+			"pricePerBarrel": "50.00",
+			"volume" : "10000",
+			"status" : "ACTIVE",
+			"totalContractPrice" : "500000.00"
+		},{
+			"contractId":"10001004",
+			"sellerCompanyName": "Calg Oil", 
+			"buyerCompanyName": "NYCGA",
+			"effectiveDateStart" : "07/01/2017",
+			"effectiveDateEnd" : "08/01/2017",
+			"pricePerBarrel": "50.00",
+			"volume" : "10000",
+			"status" : "ACTIVE",
+			"totalContractPrice" : "500000.00"
+		},{
+			"contractId":"10001005",
+			"sellerCompanyName": "Calg Oil", 
+			"buyerCompanyName": "Alberta Oil",
+			"effectiveDateStart" : "07/01/2017",
+			"effectiveDateEnd" : "08/01/2017",
+			"pricePerBarrel": "50.00",
+			"volume" : "10000",
+			"status" : "ACTIVE",
+			"totalContractPrice" : "500000.00"
+		},{
+			"contractId":"10001006",
+			"sellerCompanyName": "Oil&Gas", 
+			"buyerCompanyName": "NYCGA",
+			"effectiveDateStart" : "07/01/2017",
+			"effectiveDateEnd" : "08/01/2017",
+			"pricePerBarrel": "50.00",
+			"volume" : "10000",
+			"status" : "ACTIVE",
+			"totalContractPrice" : "500000.00"
+		}]
+}

@@ -1,0 +1,144 @@
+extends layout
+
+block content  
+  .box.span12
+    .box-header
+      h2
+        i.halflings-icon.white.align-justify
+        span.break
+        | Contracts
+      .box-icon
+        a.btn-setting(href='#')
+          i.halflings-icon.white.wrench
+        a.btn-minimize(href='#')
+          i.halflings-icon.white.chevron-up
+        a.btn-close(href='#')
+          i.halflings-icon.white.remove
+    .box-content
+      table.table.table-bordered
+        thead
+          tr
+            th Contract Id
+            th Buyer
+            th Seller
+            th Effective Date
+            th Volume
+            th Price
+            th Total 
+            th Status            
+            th Actions
+        tbody
+          tr.even
+            td 100021011
+            td Oil Inc
+            td CalgoryOil
+            td.center 2017/01/01 - 2017/02/01
+            td.center $50.00
+            td.center 10,000
+            td.center $500,000
+            td.center
+              span.label.label-success Active
+            td.center
+                a.btn.btn-success(href='#')
+                  i.halflings-icon.white.zoom-in
+                a.btn.btn-info(href='#')
+                  i.halflings-icon.white.edit
+                a.btn.btn-danger(href='#')
+                  i.halflings-icon.white.trash   
+          tr.odd
+            td 900023210
+            td Oil Inc
+            td Alberta Gas
+            td.center 2017/11/01 - 2017/12/01
+            td.center 50,000
+            td.center 45.56
+            td.center $2,500,000            
+            td.center
+              span.label.label-important Banned
+            td.center
+                a.btn.btn-success(href='#')
+                  i.halflings-icon.white.zoom-in
+                a.btn.btn-info(href='#')
+                  i.halflings-icon.white.edit
+                a.btn.btn-danger(href='#')
+                  i.halflings-icon.white.trash     
+          tr
+            td 100021011
+            td CalgoryOil
+            td Canada Oil&Pipe
+            td.center 2017/09/03 - 2017/11/10
+            td.center 150,000
+            td.center 48.95
+            td.center $23,500,000            
+            td.center
+              span.label Inactive
+            td.center
+                a.btn.btn-success(href='#')
+                  i.halflings-icon.white.zoom-in
+                a.btn.btn-info(href='#')
+                  i.halflings-icon.white.edit
+                a.btn.btn-danger(href='#')
+                  i.halflings-icon.white.trash     
+          tr
+            td 100032103            
+            td NYCGA
+            td CalgoryOil            
+            td.center 2017/09/13 - 2017/11/21
+            td.center 50,000
+            td.center 42.95
+            td.center $2,300,000            
+            td.center
+              span.label.label-warning Pending
+            td.center
+                a.btn.btn-success(href='#')
+                  i.halflings-icon.white.zoom-in
+                a.btn.btn-info(href='#')
+                  i.halflings-icon.white.edit
+                a.btn.btn-danger(href='#')
+                  i.halflings-icon.white.trash     
+
+          tr
+            td 100021011
+            td NGOIL Inc
+            td Calgory Gas
+            td.center 2017/09/13 - 2017/11/21
+            td.center 120,000
+            td.center 47.95
+            td.center $21,300,000            
+            td.center
+              span.label.label-success Active
+            td.center
+                a.btn.btn-success(href='#')
+                  i.halflings-icon.white.zoom-in
+                a.btn.btn-info(href='#')
+                  i.halflings-icon.white.edit
+                a.btn.btn-danger(href='#')
+                  i.halflings-icon.white.trash     
+          tr
+            td 100021011
+            td Oil&Gas
+            td Calg Oil
+            td.center 2017/09/13 - 2017/11/21
+            td.center 20,000
+            td.center 47.95
+            td.center $90,000            
+            td.center
+              span.label.label-success Active
+            td.center
+                a.btn.btn-success(href='#')
+                  i.halflings-icon.white.zoom-in
+                a.btn.btn-info(href='#')
+                  i.halflings-icon.white.edit
+                a.btn.btn-danger(href='#')
+                  i.halflings-icon.white.trash     
+
+      //.pagination.pagination-centered
+      //  ul
+      //    li
+      //      a(href='#') Prev
+      //    li.active
+      //      a(href='#') 1
+      //    li
+      //      a(href='#') 2          
+      //    li
+      //      a(href='#') Next

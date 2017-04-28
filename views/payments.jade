@@ -1,0 +1,100 @@
+extends layout
+
+block content  
+  .box.span12
+    .box-header
+      h2
+        i.halflings-icon.white.align-justify
+        span.break
+        | Payments
+      .box-icon
+        a.btn-setting(href='#')
+          i.halflings-icon.white.wrench
+        a.btn-minimize(href='#')
+          i.halflings-icon.white.chevron-up
+        a.btn-close(href='#')
+          i.halflings-icon.white.remove
+    .box-content
+      table.table.table-bordered
+        thead
+          tr
+            th Transaction Id
+            th From
+            th To             
+            th FI Name
+            th Account #
+            th Transit Code
+            th Amount 
+            th Status            
+        tbody
+          tr.even
+            td 100021011
+            td Oil Inc            
+            td.center Alberta Gas
+            td.center ATB Financial
+            td.center 00045520223
+            td.center ATB00191
+            td.center $500,000
+            td.center
+              span.label.label-success Active                            
+          tr.odd
+            td 900023210
+            td Alberta Gas
+            td.center Oil&Gas
+            td.center TDA Bank
+            td.center 00021101221
+            td.center TDA00191
+            td.center $2,500,000            
+            td.center
+              span.label.label-important Banned            
+          tr
+            td 100021011
+            td Canada Oil&Pipe
+            td.center CalgInc
+            td.center ATB Financial
+            td.center 00088911291
+            td.center ATB00191
+            td.center $23,500,000            
+            td.center
+              span.label Inactive
+          tr
+            td 100032103            
+            td NYCGA         
+            td.center Alberta Oil
+            td.center ATB Financial
+            td.center 00088911291
+            td.center ATB00191
+            td.center $2,300,000            
+            td.center
+              span.label.label-warning Pending            
+          tr
+            td 100021011
+            td NGOIL Inc
+            td.center NGYX
+            td.center JP Chase
+            td.center 002199191921
+            td.center JPC019121
+            td.center $21,300,000            
+            td.center
+              span.label.label-success Active
+          tr
+            td 100021011
+            td Oil&Gas
+            td.center CalgInc
+            td.center JP Chase
+            td.center 00911201221
+            td.center JPC019121
+            td.center $90,000            
+            td.center
+              span.label.label-success Active
+
+      //.pagination.pagination-centered
+      //  ul
+      //    li
+      //      a(href='#') Prev
+      //    li.active
+      //      a(href='#') 1
+      //    li
+      //      a(href='#') 2          
+      //    li
+      //      a(href='#') Next

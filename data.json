@@ -1,0 +1,44 @@
+Contract (not on blockchain)
+- contractId, String
+- sellerCompanyName, String 
+- buyerCompanyName, String
+- effectiveDateStart, Date
+- effectiveDateEnd, Date
+- pricePerBarrel, Double
+- volume, Int
+- status, Int/String
+- totalContractPrice, Double
+
+Participent (not on blockchain)
+- participentId, Int
+- companyName, String
+- companyAddress, String
+- fiName, String
+- accountNumber, String
+- transitCode, String
+- beneficiaryName, String 
+- availableBalance, Double
+- overDraftLimit, Double 
+
+Reconciliation (on blockchain)
+- reconciliationId, Int
+- contractId, Int
+- sellerCompanyName, String
+- buyerCompanyName, String
+- actuallVolume, Int
+- totalAmount, Double
+- status, Int/String
+- contractVolume, Int
+- contractPrice, Double
+- accountFrom, {}
+- accountTo, {}
+
+Status (not on blockchain)
+{	"Created" : "1",
+	"Approved" :"2",
+	"Reconciled": "3",
+	"Approved For Payment": "4",
+	"Close": "5",
+	"Rejected": "6",
+	"Submited": "5"
+}

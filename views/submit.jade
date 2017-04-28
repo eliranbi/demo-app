@@ -1,0 +1,73 @@
+extends layout
+
+block content  
+  //Contract info start
+  .row-fluid.sortable.ui-sortable
+    .box.span8
+      .box-header
+        h2
+          i.halflings-icon.white.align-justify
+          span.break
+          | Contract Information        
+      .box-content
+        table.table.table-bordered
+          thead
+            tr
+              th Contract Id
+              th Start Date
+              th End Date
+              th Seller Name
+          tbody
+            tr
+              td 100020111
+              td.center 2012/01/01 
+              td.center 2012/02/01 
+              td.center Oil&Gas               
+          thead
+            tr
+              th Price
+              th Volume
+              th Total
+              th Status
+          tbody
+            tr
+              td $51.50
+              td 10,000
+              td.center $515,000              
+              td.center Created              
+    // /span
+  //Contract info end
+  .row-fluid.sortable.ui-sortable
+    .box.span12
+      .box-header(data-original-title='')
+        h2
+          i.halflings-icon.white.edit
+          span.break
+          | Reconcile Contract        
+      .box-content
+        form.form-horizontal
+          ///////////          
+          ///////////
+          fieldset
+            .control-group
+              label.control-label(for='contractId') Contract Id
+              .controls
+                input#disabledInput.input-xlarge.disabled(type='text', placeholder='100210122', disabled='')
+            .control-group
+              label.control-label(for='focusedInput') Actual Volume
+              .controls
+                input#focusedInput.input-xlarge.focused(type='text', value='')
+            .control-group
+              label.control-label Price per Barrel
+              .controls
+                span.input-xlarge.uneditable-input $50.00
+            .control-group
+              label.control-label(for='focusedInput') Total Price
+              .controls
+                input#focusedInput.input-xlarge.focused(type='text', value='')    
+
+            .form-actions
+              button.btn.btn-primary(type='submit') Submit
+              &nbsp&nbsp&nbsp
+              button.btn Cancel
+    // /span
