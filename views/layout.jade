@@ -27,7 +27,7 @@ html(lang='en')
     // start: Favicon
     link(rel='shortcut icon', href='img/favicon.ico')
     // end: Favicon
-  body    
+  body
     // start: Header
     .navbar
       .navbar-inner
@@ -40,13 +40,13 @@ html(lang='en')
             span.b Oil Settlement
           // start: Header Menu
           .nav-no-collapse.header-nav
-            ul.nav.pull-right              
+            ul.nav.pull-right
               // start: Notifications Dropdown
               //li.dropdown.hidden-phone
               //  a.btn.dropdown-toggle(data-toggle='dropdown', href='#')
-              //    i.icon-calendar                  
+              //    i.icon-calendar
               // end: Notifications Dropdown
-              // start: Message Dropdown              
+              // start: Message Dropdown
               // start: User Dropdown
               li.dropdown
                 a.btn.dropdown-toggle(data-toggle='dropdown', href='#')
@@ -96,19 +96,24 @@ html(lang='en')
               li
                 a(href='reconciles')
                   i.icon-envelope
-                  span.hidden-tablet  Reconciles
-              li
-                a(href='payments')
-                  i.icon-tasks
-                  span.hidden-tablet  Payments              
+                  span.hidden-tablet  Reconciliation
               li
                 a(href='submit')
                   i.icon-calendar
-                  span.hidden-tablet  Transact
+                  span.hidden-tablet  Reconcile Form
+              li
+                a(href='payments')
+                  i.icon-tasks
+                  span.hidden-tablet  Payments
+              li
+                a(href='history')
+                  i.icon-calendar
+                  span.hidden-tablet  Payments History
+                  
               //li
               //  a(href='file-manager.html')
               //    i.icon-folder-open
-              //    span.hidden-tablet  File Manager              
+              //    span.hidden-tablet  File Manager
               //li
               //  a(href='login.html')
               //    i.icon-lock
@@ -123,8 +128,8 @@ html(lang='en')
               |  enabled to use this site.
         // start: Content
         #content.span10
-          block content        
-          
+          block content
+
         // /#content.span10
     // /fluid-row
     #myModal.modal.hide.fade

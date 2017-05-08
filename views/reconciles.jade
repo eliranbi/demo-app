@@ -1,12 +1,12 @@
 extends layout
 
-block content  
+block content
   .box.span12
     .box-header
       h2
         i.halflings-icon.white.align-justify
         span.break
-        | Reconciles
+        | Reconciles:Buyer
       .box-icon
         a.btn-setting(href='#')
           i.halflings-icon.white.wrench
@@ -23,45 +23,28 @@ block content
             th Effective Dates
             th Price
             th Volume
-            th Actual 
-            th Total 
-            th Status            
+            th Actual
+            th Total
+            th Status
             th Actions
         tbody
-          //-- Dyanmicly loading table content ...
-          each item in items
-            tr
-              td=item.contractId
-              td=item.companyName
-              td=item.dates
-              td.center=item.price
-              td.center=item.volume
-              td.center=item.actual
-              td.center=item.total
-              td.center
-                //span.label.label-success=item.status
-                span
-                  b=item.status
-              td.center
-                button.btn.btn-small.btn-success Accept
-                &nbsp&nbsp
-                button.btn.btn-small.btn-danger Reject
+
 
           tr.even
             td 100021011
-            td Oil Inc            
+            td Oil Inc
             td.center 2017/01/01 - 2017/02/01
             td.center $50.00
             td.center 10,000
             td.center 10,000
             td.center $500,000
             td.center
-              span.label.label-success Active
+              span.label.label-success Approved
             td.center
                 button.btn.btn-small.btn-success Accept
                 &nbsp&nbsp
                 button.btn.btn-small.btn-danger Reject
-                
+
           tr.odd
             td 900023210
             td Alberta Gas
@@ -69,9 +52,9 @@ block content
             td.center $50.00
             td.center 10,000
             td.center 10,001
-            td.center $2,500,000            
+            td.center $2,500,000
             td.center
-              span.label.label-important Banned
+              span.label.label-important Rejected
             td.center
                 button.btn.btn-small.btn-success Accept
                 &nbsp&nbsp
@@ -79,27 +62,27 @@ block content
           tr
             td 100021011
             td Canada Oil&Pipe
-            td.center 2017/09/03 - 2017/11/10            
+            td.center 2017/09/03 - 2017/11/10
             td.center $48.95
             td.center 150,000
             td.center 150,000
-            td.center $23,500,000            
+            td.center $23,500,000
             td.center
-              span.label Inactive
+              span.label Reconciled
             td.center
                 button.btn.btn-small.btn-success Accept
                 &nbsp&nbsp
                 button.btn.btn-small.btn-danger Reject
           tr
-            td 100032103            
-            td NYCGA         
+            td 100032103
+            td NYCGA
             td.center 2017/09/13 - 2017/11/21
             td.center $42.95
             td.center 50,000
             td.center 49,950
-            td.center $2,300,000            
+            td.center $2,300,000
             td.center
-              span.label.label-warning Pending
+              span.label.label-important Rejected
             td.center
                 button.btn.btn-small.btn-success Accept
                 &nbsp&nbsp
@@ -110,11 +93,11 @@ block content
             td NGOIL Inc
             td.center 2017/09/13 - 2017/11/21
             td.center $47.95
-            td.center 120,000            
-            td.center 120,000            
-            td.center $21,300,000            
+            td.center 120,000
+            td.center 120,000
+            td.center $21,300,000
             td.center
-              span.label.label-success Active
+              span.label.label-success Approved
             td.center
                 button.btn.btn-small.btn-success Accept
                 &nbsp&nbsp
@@ -122,17 +105,248 @@ block content
           tr
             td 100021011
             td Oil&Gas
-            td.center 2017/09/13 - 2017/11/21            
+            td.center 2017/09/13 - 2017/11/21
             td.center $47.95
             td.center 20,000
             td.center 20,000
-            td.center $90,000            
+            td.center $90,000
             td.center
-              span.label.label-success Active
+              span.label.label-success Approved
             td.center
                 button.btn.btn-small.btn-success Accept
                 &nbsp&nbsp
                 button.btn.btn-small.btn-danger Reject
+
+  .box
+    .box-header
+      h2
+        i.halflings-icon.white.align-justify
+        span.break
+        | Reconciles:Seller
+      .box-icon
+        a.btn-setting(href='#')
+          i.halflings-icon.white.wrench
+        a.btn-minimize(href='#')
+          i.halflings-icon.white.chevron-up
+        a.btn-close(href='#')
+          i.halflings-icon.white.remove
+    .box-content
+      table.table.table-bordered
+        thead
+          tr
+            th Contract Id
+            th Seller
+            th Effective Dates
+            th Price
+            th Volume
+            th Actual
+            th Total
+            th Status
+            th Actions
+        tbody
+
+
+          tr.even
+            td 100021011
+            td Oil Inc
+            td.center 2017/01/01 - 2017/02/01
+            td.center $50.00
+            td.center 10,000
+            td.center 10,000
+            td.center $500,000
+            td.center
+              span.label.label-success Approved
+            td.center
+
+
+          tr.odd
+            td 900023210
+            td Alberta Gas
+            td.center 2017/11/01 - 2017/12/01
+            td.center $50.00
+            td.center 10,000
+            td.center 10,001
+            td.center $2,500,000
+            td.center
+              span.label.label-important Rejected
+            td.center
+                button.btn.btn-small.btn-success Edit
+
+          tr
+            td 100021011
+            td Canada Oil&Pipe
+            td.center 2017/09/03 - 2017/11/10
+            td.center $48.95
+            td.center 150,000
+            td.center 150,000
+            td.center $23,500,000
+            td.center
+              span.label Reconciled
+            td.center
+
+          tr
+            td 100032103
+            td NYCGA
+            td.center 2017/09/13 - 2017/11/21
+            td.center $42.95
+            td.center 50,000
+            td.center 49,950
+            td.center $2,300,000
+            td.center
+              span.label.label-important Rejected
+            td.center
+                button.btn.btn-small.btn-success Edit
+
+
+          tr
+            td 100021011
+            td NGOIL Inc
+            td.center 2017/09/13 - 2017/11/21
+            td.center $47.95
+            td.center 120,000
+            td.center 120,000
+            td.center $21,300,000
+            td.center
+              span.label.label-success Approved
+            td.center
+
+          tr
+            td 100021011
+            td Oil&Gas
+            td.center 2017/09/13 - 2017/11/21
+            td.center $47.95
+            td.center 20,000
+            td.center 20,000
+            td.center $90,000
+            td.center
+              span.label.label-success Approved
+            td.center
+
+
+  .box
+    .box-header
+      h2
+        i.halflings-icon.white.align-justify
+        span.break
+        | Reconciles:ATB Financial
+      .box-icon
+        a.btn-setting(href='#')
+          i.halflings-icon.white.wrench
+        a.btn-minimize(href='#')
+          i.halflings-icon.white.chevron-up
+        a.btn-close(href='#')
+          i.halflings-icon.white.remove
+    .box-content
+      table.table.table-bordered
+        thead
+          tr
+            th Contract Id
+            th Seller
+            th Buyer
+            th Effective Dates
+            //th Price
+            //th Volume
+            //th Actual
+            th Total
+            th Status
+
+        tbody
+          //-- Dyanmicly loading table content ...
+          //--
+            each item in items
+              tr
+                td=item.contractId
+                td=item.companyName
+                td=item.dates
+                td.center=item.price
+                td.center=item.volume
+                td.center=item.actual
+                td.center=item.total
+                td.center
+                  //span.label.label-success=item.status
+                  span
+                    b=item.status
+                td.center
+                  button.btn.btn-small.btn-success Accept
+                  &nbsp&nbsp
+                  button.btn.btn-small.btn-danger Reject
+
+          tr.even
+            td 100021011
+            td Oil Inc
+            td Oil&Gas
+            td.center 2017/01/01 - 2017/02/01
+            //td.center $50.00
+            //td.center 10,000
+            //td.center 10,000
+            td.center $500,000
+            td.center
+              span.label.label-success Approved
+
+
+
+          tr.odd
+            td 900023210
+            td Alberta Gas
+            td Oil Inc
+            td.center 2017/11/01 - 2017/12/01
+            //td.center $50.00
+            //td.center 10,000
+            //td.center 10,001
+            td.center $2,500,000
+            td.center
+              span.label.label-important Rejected
+
+          tr
+            td 100021011
+            td Canada Oil&Pipe
+            td Oil&Gas
+            td.center 2017/09/03 - 2017/11/10
+            //td.center $48.95
+            //td.center 150,000
+            //td.center 150,000
+            td.center $23,500,000
+            td.center
+              span.label Reconciled
+
+          tr
+            td 100032103
+            td NYCGA
+            td Oil&Gas
+            td.center 2017/09/13 - 2017/11/21
+            //td.center $42.95
+            //td.center 50,000
+            //td.center 49,950
+            td.center $2,300,000
+            td.center
+              span.label.label-important Rejected
+
+
+          tr
+            td 100021011
+            td NGOIL Inc
+            td NYCGA
+            td.center 2017/09/13 - 2017/11/21
+            //td.center $47.95
+            //td.center 120,000
+            //td.center 120,000
+            td.center $21,300,000
+            td.center
+              span.label.label-success Approved
+
+          tr
+            td 100021011
+            td Oil&Gas
+            td Oil Inc
+            td.center 2017/09/13 - 2017/11/21
+            //td.center $47.95
+            //td.center 20,000
+            //td.center 20,000
+            td.center $90,000
+            td.center
+              span.label.label-success Approved
+
+
 
       //.pagination.pagination-centered
       //  ul
@@ -141,6 +355,6 @@ block content
       //    li.active
       //      a(href='#') 1
       //    li
-      //      a(href='#') 2          
+      //      a(href='#') 2
       //    li
       //      a(href='#') Next

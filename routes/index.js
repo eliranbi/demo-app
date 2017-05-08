@@ -46,4 +46,8 @@ router.get('/payments', function(req, res, next) {
 router.get('/submit', function(req, res, next) {
   res.render('submit', { title: 'Eliran' });
 });
+
+router.get('/history', function(req, res, next) {
+  res.render('history', { title: 'Eliran' });
+});
 module.exports = router;
